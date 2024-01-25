@@ -1,198 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
 body {
-    display: inline-flex;
-    padding: 239px 542px 319px 542px;
-    align-items: flex-start;
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+  
+body,
+button {
+      font-family: 'DM Sans', sans-serif;
+    }
 
-    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
-	animation: gradient 10s ease infinite;
-    background-size: 200% 200%;
-  }
 
-main{
-    display: flex;
-    width: 428px;
-    padding: 48px 64px 64px 64px;
-    justify-content: center;
-    align-items: center;
+main {
+    background: #ffffff;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    width: min(42.8rem, 90%);
+    margin-top: -8rem;
     text-align: center;
-
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
-}
-
-.div-cookie{
-    width: 300px;
-    height: 312px;
-    flex-shrink: 0;
-}
-
-.fortune-cookie{
-    display: flex;
-    width: 300px;
-    height: 200px;
-    padding: 0px 17.857px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.fortune-cookie .cookie{
-    display: flex;
-    width: 264.286px;
-    height: 200px;
-    padding: 6.424px 9.73px 1.786px 5.714px;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.fortune-cookie .text{
-    color: #34355B;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-    width: 258.513px;
-}
-
-.fortune-cookie .text1{
-    color: #34355B;
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
-main-sorte{
-    display: flex;
-    padding: 48px 64px;
-    align-items: flex-start;
-    gap: 10px;
-
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
 }
 
-.div-sorte{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 17px;
+h1,
+p {
+  color: #34355b;
 }
 
-.fortune-cookie .fortune-cookie-sorte{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+#fortune-Cookie {
+  width: 300px;
+  height: 200px;
+  background-image: url(./assets/biscoitoSorte.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 20px 30px 0px 0px;
+  
 }
 
-.fortune-cookie .mensagem{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+#fortune-Cookie:hover {
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+ 
+.screen2 h2 {
+    font-size: 2.4rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+    background-color: #e4edf1;
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+    animation-name: toFadeIn;
+    animation-duration: 2s;
+    text-align: center;  
+    padding: 10px; 
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);    
 }
 
-.fortune-cookie .text-mensagem{
-    color: #000;
-    text-align: center;
-    font-family: "Dancing Script";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+#cracked-Cookie {
+  width: 300px;
+  height: 200px;
+  background-image: url(./assets/biscoitoSorteAberto.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.fortune-cookie .open-cookie{
-    display: flex;
-    width: 300px;
-    height: 200px;
-    padding: 43.128px 0px 42.341px 0px;
-    justify-content: center;
-    align-items: center;
+button {
+  background-color: #ff9500;
+  color: white;
+  font-weight: bold;
+  border-radius: .4rem .4rem .4rem .4rem;
+  cursor: pointer;
+  transition: background .3s;
+  border: 0;
+  padding: 1.6rem;
 }
 
-button{
-    display: flex;
-    padding: 16px;
-    align-items: flex-start;
-    gap: 10px;
-
-    border-radius: 4px;
-    background: #FF9500;
+button:hover {
+  background-color: #d37b01;
 }
 
-button .button-text{
-    color: #FFF;
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+@keyframes toFadeIn {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+    }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
 
-/* Define a animação de tremer */
 @keyframes shake {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    25%, 75% {
-      transform: translateX(-5px);
-    }
-    50% {
-      transform: translateX(5px);
-    }
-  }
-
-  /* Aplica a animação à imagem ao passar o mouse */
-  .shakeImage {
-    width: 200px; /* Defina a largura da imagem conforme necessário */
-    transition: transform 0.3s ease-in-out; /* Adiciona transição para suavizar a animação */
-  }
-
-  .shakeImage:hover {
-    animation: shake 0.5s ease-in-out infinite; /* Aplica a animação ao passar o mouse */
-  }
-
-/* Define a animação de subir */
-@keyframes slideUp {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  /* Aplica a animação ao texto */
-  .slideUpText {
-    animation: slideUp 1s ease-out; /* Nome da animação, duração, função de temporização */
-  }
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
