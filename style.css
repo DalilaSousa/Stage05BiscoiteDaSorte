@@ -1,0 +1,198 @@
+body {
+    display: inline-flex;
+    padding: 239px 542px 319px 542px;
+    align-items: flex-start;
+
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+  }
+
+main{
+    display: flex;
+    width: 428px;
+    padding: 48px 64px 64px 64px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.div-cookie{
+    width: 300px;
+    height: 312px;
+    flex-shrink: 0;
+}
+
+.fortune-cookie{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 0px 17.857px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.fortune-cookie .cookie{
+    display: flex;
+    width: 264.286px;
+    height: 200px;
+    padding: 6.424px 9.73px 1.786px 5.714px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.fortune-cookie .text{
+    color: #34355B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 258.513px;
+}
+
+.fortune-cookie .text1{
+    color: #34355B;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hide {
+    display: none;
+}
+
+main-sorte{
+    display: flex;
+    padding: 48px 64px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.div-sorte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.fortune-cookie .fortune-cookie-sorte{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fortune-cookie .mensagem{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fortune-cookie .text-mensagem{
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fortune-cookie .open-cookie{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 43.128px 0px 42.341px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 4px;
+    background: #FF9500;
+}
+
+button .button-text{
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Define a animação de tremer */
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25%, 75% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+  }
+
+  /* Aplica a animação à imagem ao passar o mouse */
+  .shakeImage {
+    width: 200px; /* Defina a largura da imagem conforme necessário */
+    transition: transform 0.3s ease-in-out; /* Adiciona transição para suavizar a animação */
+  }
+
+  .shakeImage:hover {
+    animation: shake 0.5s ease-in-out infinite; /* Aplica a animação ao passar o mouse */
+  }
+
+/* Define a animação de subir */
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Aplica a animação ao texto */
+  .slideUpText {
+    animation: slideUp 1s ease-out; /* Nome da animação, duração, função de temporização */
+  }
